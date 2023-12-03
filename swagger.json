@@ -1,0 +1,38 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "Hackathon",
+        "version": "1.0.0",
+        "title": "Typescript"
+    },
+    "schemes": [
+        "http"
+    ],
+    "host": "localhost:3000",
+    "basePath": "/",
+    "paths": {
+        "/hello": {
+            "get": {
+                "summary": "print Hello World",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "200 OK",
+                        "schema": {
+                            "type": "object"
+                        }
+                    }
+                },
+                "400": {
+                    "description": "Error in Get Hello World api, Please Check The Logs"
+                },
+                "default": {
+                    "description": "Unexpected error"
+                }
+            }
+        }
+    }
+}
